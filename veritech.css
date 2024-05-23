@@ -1,0 +1,141 @@
+/* styles.css */
+
+body {
+    margin: 50px;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+hr.dashed {
+    border-top: 3px dashed #a64ca6;
+  }
+
+header .company-name h1 {
+    background: #a64ca6;
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+header .intro p {
+    margin: 1rem 0;
+}
+
+header .intro h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+header .intro p:last-of-type {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.team-section {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    background: #a64ca6;
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-member {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.team-member p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+/*footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+*/
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+    }
+}
